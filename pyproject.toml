@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "taskmon"
+dynamic = ["version"]
+description = "Watch every command your AI agent runs in a live tabbed window, while the agent only gets a compact summary."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Tyler Lesthaeghe" }]
+requires-python = ">=3.8"
+keywords = ["claude", "claude-code", "ai-agents", "monitoring", "cli", "tkinter"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Environment :: Console",
+    "Environment :: X11 Applications",
+    "Topic :: Software Development :: Build Tools",
+]
+
+[project.scripts]
+taskmon = "taskmon:main"
+
+[tool.setuptools]
+py-modules = ["taskmon"]
+
+[tool.setuptools.dynamic]
+version = { attr = "taskmon.__version__" }
