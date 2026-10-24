@@ -16,7 +16,7 @@ It is a single Python file using only the standard library (tkinter for the wind
 ## Install
 
 ```bash
-pip install git+https://github.com/OWNER/taskmon     # or: pipx install git+https://github.com/OWNER/taskmon
+pip install git+https://github.com/lesthaeghet/ai-task-monitor     # or: pipx install git+https://github.com/lesthaeghet/ai-task-monitor
 taskmon install-skill                                # teach Claude Code to use it (~/.claude/skills/taskmon)
 ```
 

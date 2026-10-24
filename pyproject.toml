@@ -20,6 +20,9 @@ classifiers = [
     "Topic :: Software Development :: Build Tools",
 ]
 
+[project.urls]
+Homepage = "https://github.com/lesthaeghet/ai-task-monitor"
+
 [project.scripts]
 taskmon = "taskmon:main"
 
